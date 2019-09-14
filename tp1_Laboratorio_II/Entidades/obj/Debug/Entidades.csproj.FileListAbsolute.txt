@@ -1,0 +1,10 @@
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\bin\Debug\Entidades.exe.config
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\bin\Debug\Entidades.exe
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\bin\Debug\Entidades.pdb
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.Calculadora_de_Fabian_Rolon_del_curso_2do_D.resources
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.exe
+C:\Users\Calidad\Desktop\Programas\Program\practicaProgramacionII\Entidades v1.1\obj\Debug\Entidades.pdb
