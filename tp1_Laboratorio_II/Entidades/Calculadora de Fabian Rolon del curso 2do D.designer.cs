@@ -36,7 +36,7 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnDecimalBinario = new System.Windows.Forms.Button();
             this.btnBinarioDecimal = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNumeroUno
@@ -136,16 +136,16 @@
             this.btnBinarioDecimal.UseVisualStyleBackColor = false;
             this.btnBinarioDecimal.Click += new System.EventHandler(this.BtnBinarioDecimal_Click_1);
             // 
-            // label1
+            // lblResultado
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(348, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 42);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "0";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.ForeColor = System.Drawing.Color.Red;
+            this.lblResultado.Location = new System.Drawing.Point(348, 10);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(40, 42);
+            this.lblResultado.TabIndex = 3;
+            this.lblResultado.Text = "0";
             // 
             // Calculadora_de_Fabian_Rolon_del_curso_2do_D
             // 
@@ -153,7 +153,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(611, 258);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnBinarioDecimal);
@@ -183,6 +183,6 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnDecimalBinario;
         private System.Windows.Forms.Button btnBinarioDecimal;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultado;
     }
 }

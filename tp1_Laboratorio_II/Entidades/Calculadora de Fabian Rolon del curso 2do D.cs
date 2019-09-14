@@ -23,14 +23,14 @@ namespace Entidades
         {
             Numero numeroUno = new Numero(txtNumeroUno.Text);
             Numero numeroDos = new Numero(txtNumeroDos.Text);
-            this.label1.Text = Calculadora.Operar(numeroUno, numeroDos, cbOperador.Text).ToString();
+            this.lblResultado.Text = Calculadora.Operar(numeroUno, numeroDos, cbOperador.Text).ToString();
         }
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
             this.txtNumeroUno.Text = "";
             this.txtNumeroDos.Text = "";
-            this.label1.Text = "0";
+            this.lblResultado.Text = "0";
             cbOperador.Text = "";
         }
 
@@ -42,14 +42,14 @@ namespace Entidades
 
         private void BtnDecimalBinario_Click(object sender, EventArgs e)
         {
-            Numero numeroUno = new Numero(label1.Text);
-            this.label1.Text = numeroUno.DecimalBinario();
+            Numero numeroUno = new Numero(lblResultado.Text);
+            this.lblResultado.Text = numeroUno.DecimalBinario();
         }
 
         private void BtnBinarioDecimal_Click_1(object sender, EventArgs e)
         {
-            Numero numeroUno = new Numero(label1.Text);
-            this.label1.Text = numeroUno.BinarioDecimal();
+            Numero numeroUno = new Numero(lblResultado.Text);
+            this.lblResultado.Text = numeroUno.BinarioDecimal();
         }
     }
 }
