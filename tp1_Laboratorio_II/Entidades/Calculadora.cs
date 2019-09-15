@@ -13,7 +13,7 @@ namespace Entidades
         /// Recibe un operador del tipo string y valida si es una operacion válida.
         /// </summary>
         /// <param name="operador"></param>
-        /// <returns></returns>
+        /// <returns>Retorna el operador si es valido, retorna el operador suma si no es valido</returns>
         private static string ValidarOperador(string operador)
         {
             switch (operador)
@@ -36,7 +36,7 @@ namespace Entidades
         /// <param name="numeroUno"></param>
         /// <param name="NumeroDos"></param>
         /// <param name="operador"></param>
-        /// <returns></returns>
+        /// <returns>Retorna el resultado de la operacion indicada, MinValue si no puede operar</returns>
         public static double Operar(Numero numeroUno, Numero NumeroDos, string operador)
         {
             switch (Calculadora.ValidarOperador(operador))
@@ -53,6 +53,7 @@ namespace Entidades
                     return double.MinValue;
             }
         }
+        #endregion
     }
 }
-#endregion
+

@@ -50,7 +50,7 @@ namespace Entidades
         /// Metodo de clase que valida un dato del tipo 'string' se pueda convertir en un dato del tipo 'double' correcto.
         /// </summary>
         /// <param name="strNumero"></param>
-        /// <returns></returns>
+        /// <returns>Retorna el resultado si sale bien, 0 caso contrario</returns>
         private double ValidarNumero(string strNumero)
         {
             double auxNumero;
@@ -65,7 +65,7 @@ namespace Entidades
         /// Metodo que valida si un dato del tipo 'string' sea un binario. 
         /// </summary>
         /// <param name="strNumero"></param>
-        /// <returns></returns>
+        /// <returns>Valida si es binario o no, retorna true si es, false caso contrario</returns>
         public bool ValidarBinario(string strNumero)
         {
             for (int i = 0; i < strNumero.Length; i++)
@@ -85,7 +85,7 @@ namespace Entidades
         /// </summary>
         /// <param name="numeroUno"></param>
         /// <param name="numeroDos"></param>
-        /// <returns></returns>
+        /// <returns>Retorna la suma de los atributos de ambas instancias</returns>
         public static double operator +(Numero numeroUno, Numero numeroDos)
         {
             return numeroUno.numero + numeroDos.numero;
@@ -95,7 +95,7 @@ namespace Entidades
         /// </summary>
         /// <param name="numeroUno"></param>
         /// <param name="numeroDos"></param>
-        /// <returns></returns>
+        /// <returns>Retorna la resta de los atributos de ambas instancias</returns>
         public static double operator -(Numero numeroUno, Numero numeroDos)
         {
             return numeroUno.numero - numeroDos.numero;
@@ -105,7 +105,7 @@ namespace Entidades
         /// </summary>
         /// <param name="numeroUno"></param>
         /// <param name="numeroDos"></param>
-        /// <returns></returns>
+        /// <returns>Retorna la multiplicacion de los atributos de ambas instancias</returns>
         public static double operator *(Numero numeroUno, Numero numeroDos)
         {
             return numeroUno.numero * numeroDos.numero;
@@ -115,7 +115,7 @@ namespace Entidades
         /// </summary>
         /// <param name="numeroUno"></param>
         /// <param name="numeroDos"></param>
-        /// <returns></returns>
+        /// <returns>Retorna la division de los atributos de ambas instancias caso que el denominador sea cero retorna MinValue</returns>
         public static double operator /(Numero numeroUno, Numero numeroDos)
         {
             if (numeroDos.numero != 0)
@@ -131,19 +131,25 @@ namespace Entidades
         /// Convierte un dato del tipo string a un string en decimal.
         /// </summary>
         /// <param name="numero"></param>
-        /// <returns></returns>
+        /// <returns>Retorna el resultado si sale bien y "Valor Inválido" si no puede convertir</returns>
         public string DecimalBinario(string numero)
         {
-            return Convert.ToByte(numero).ToString();
+            if(!double.TryParse(numero, out double auxNumero))
+                return "Valor inválido";
+
+            if (DecimalBinario(auxNumero) == -1)
+            {
+                return "Valor inválido";
+            }
+            else
+                return DecimalBinario(auxNumero).ToString();
         }
         /// <summary>
         /// Convierte el atributo numero del tipo double de un objeto de tipo Numero en string binario.
         /// </summary>
-        /// <returns></returns>
-        public string DecimalBinario()
+        /// <returns>Retorna el resultado convertido o "-1" si no se puede convertir</returns>
+        public double DecimalBinario(double numero)
         {
-            int numero = (int)this.numero;
-
             if (numero > 0 && numero < 256)
             {
                 string resultado = "";
@@ -152,15 +158,15 @@ namespace Entidades
                     resultado = (numero % 2) + resultado;
                     numero = (int)numero / 2;
                 } while (numero > 0);
-                return resultado.ToString();
+                return double.Parse(resultado);
             }
             else
-                return "Valor inválido";
+                return -1;
         }
         /// <summary>
         /// Convierte el atributo numero del tipo string de un objeto de tipo Numero en binario.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Retorna el resultado si sale bien y "Valor Inválido" si no puede convertir</returns>
         public string BinarioDecimal()
         {
             string bufferNumero = this.numero.ToString();
