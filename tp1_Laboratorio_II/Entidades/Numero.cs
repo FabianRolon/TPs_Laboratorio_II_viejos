@@ -150,14 +150,15 @@ namespace Entidades
         /// <returns>Retorna el resultado convertido o "-1" si no se puede convertir</returns>
         public double DecimalBinario(double numero)
         {
-            if (numero > 0 && numero < 256)
+            int auxNumero = (int)numero;
+            if (auxNumero > 0 && auxNumero < 256)
             {
                 string resultado = "";
                 do
                 {
-                    resultado = (numero % 2) + resultado;
-                    numero = (int)numero / 2;
-                } while (numero > 0);
+                    resultado = (auxNumero % 2) + resultado;
+                    auxNumero = (int)auxNumero / 2;
+                } while (auxNumero > 0);
                 return double.Parse(resultado);
             }
             else
