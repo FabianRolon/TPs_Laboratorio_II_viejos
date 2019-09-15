@@ -42,7 +42,9 @@
             // 
             // txtNumeroUno
             // 
+            this.txtNumeroUno.BackColor = System.Drawing.Color.Black;
             this.txtNumeroUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroUno.ForeColor = System.Drawing.Color.Red;
             this.txtNumeroUno.Location = new System.Drawing.Point(12, 55);
             this.txtNumeroUno.Multiline = true;
             this.txtNumeroUno.Name = "txtNumeroUno";
@@ -51,7 +53,9 @@
             // 
             // txtNumeroDos
             // 
+            this.txtNumeroDos.BackColor = System.Drawing.Color.Black;
             this.txtNumeroDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroDos.ForeColor = System.Drawing.Color.Red;
             this.txtNumeroDos.Location = new System.Drawing.Point(407, 55);
             this.txtNumeroDos.Multiline = true;
             this.txtNumeroDos.Name = "txtNumeroDos";
@@ -60,7 +64,9 @@
             // 
             // cbOperador
             // 
+            this.cbOperador.BackColor = System.Drawing.Color.Black;
             this.cbOperador.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOperador.ForeColor = System.Drawing.Color.Red;
             this.cbOperador.FormattingEnabled = true;
             this.cbOperador.Items.AddRange(new object[] {
             "+",
@@ -113,7 +119,7 @@
             // 
             // btnDecimalBinario
             // 
-            this.btnDecimalBinario.BackColor = System.Drawing.Color.Silver;
+            this.btnDecimalBinario.BackColor = System.Drawing.Color.Black;
             this.btnDecimalBinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnDecimalBinario.ForeColor = System.Drawing.Color.Red;
             this.btnDecimalBinario.Location = new System.Drawing.Point(12, 185);
@@ -126,7 +132,7 @@
             // 
             // btnBinarioDecimal
             // 
-            this.btnBinarioDecimal.BackColor = System.Drawing.Color.Silver;
+            this.btnBinarioDecimal.BackColor = System.Drawing.Color.Black;
             this.btnBinarioDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnBinarioDecimal.ForeColor = System.Drawing.Color.Red;
             this.btnBinarioDecimal.Location = new System.Drawing.Point(314, 185);
@@ -140,9 +146,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(348, 10);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(362, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 42);
             this.label1.TabIndex = 3;
@@ -153,6 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = global::Entidades.Properties.Resources.orig_81163__1_;
             this.ClientSize = new System.Drawing.Size(611, 258);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLimpiar);
