@@ -137,18 +137,13 @@ namespace Entidades
             if(!double.TryParse(numero, out double auxNumero))
                 return "Valor inválido";
 
-            if (DecimalBinario(auxNumero) == -1)
-            {
-                return "Valor inválido";
-            }
-            else
-                return DecimalBinario(auxNumero).ToString();
+                return DecimalBinario(auxNumero);
         }
         /// <summary>
         /// Convierte el atributo numero del tipo double de un objeto de tipo Numero en string binario.
         /// </summary>
         /// <returns>Retorna el resultado convertido o "-1" si no se puede convertir</returns>
-        public double DecimalBinario(double numero)
+        public string DecimalBinario(double numero)
         {
             int auxNumero = (int)numero;
             if (auxNumero > 0 && auxNumero < 256)
@@ -159,10 +154,10 @@ namespace Entidades
                     resultado = (auxNumero % 2) + resultado;
                     auxNumero = (int)auxNumero / 2;
                 } while (auxNumero > 0);
-                return double.Parse(resultado);
+                return resultado;
             }
             else
-                return -1;
+                return "Valor inválido";
         }
         /// <summary>
         /// Convierte el atributo numero del tipo string de un objeto de tipo Numero en binario.

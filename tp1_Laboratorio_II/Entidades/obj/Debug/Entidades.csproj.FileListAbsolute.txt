@@ -18,3 +18,13 @@ C:\Users\Fabian\Documents\Programacion y Laboratorio II\TPs_Laboratorio_II\tp1_L
 C:\Users\Fabian\Documents\Programacion y Laboratorio II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Fabian\Documents\Programacion y Laboratorio II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.exe
 C:\Users\Fabian\Documents\Programacion y Laboratorio II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\bin\Debug\Entidades.exe.config
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\bin\Debug\Entidades.exe
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.Calculadora_de_Fabian_Rolon_del_curso_2do_D.resources
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.exe
+C:\Users\Calidad\Desktop\Programas\Program\TPs_Laboratorio_II\TPs_Laboratorio_II\tp1_Laboratorio_II\Entidades\obj\Debug\Entidades.pdb
