@@ -163,15 +163,14 @@ namespace Entidades
         /// Convierte el atributo numero del tipo string de un objeto de tipo Numero en binario.
         /// </summary>
         /// <returns>Retorna el resultado si sale bien y "Valor Inválido" si no puede convertir</returns>
-        public string BinarioDecimal()
+        public string BinarioDecimal(string numero)
         {
-            string bufferNumero = this.numero.ToString();
-            if (ValidarBinario(bufferNumero))
+            if (ValidarBinario(numero))
             {
                 double resultado = 0;
-                for (int i = 0; i < bufferNumero.Length; i++)
+                for (int i = 0; i < numero.Length; i++)
                 {
-                    resultado += int.Parse(bufferNumero[i].ToString()) * (Math.Pow(2, bufferNumero.Length - 1 - i));
+                    resultado += int.Parse(numero[i].ToString()) * (Math.Pow(2, numero.Length - 1 - i));
                 }
                 return resultado.ToString();
             }

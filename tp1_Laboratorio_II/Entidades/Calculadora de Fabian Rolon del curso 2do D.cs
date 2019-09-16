@@ -61,7 +61,7 @@ namespace Entidades
         private void BtnBinarioDecimal_Click_1(object sender, EventArgs e)
         {
             Numero numeroUno = new Numero(label1.Text);
-            this.label1.Text = numeroUno.BinarioDecimal();
+            this.label1.Text = numeroUno.BinarioDecimal(label1.Text);
         }
         #endregion
     }
